@@ -3,12 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./style/reset.css">
-    <link rel="stylesheet" href="./style/style.css">
     <title>Alura Books</title>
+    <link rel="stylesheet" href="./style/reset.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="./style/style.css">
 </head>
 <body>
     <header class="cabeçalho">
@@ -45,5 +46,83 @@
         <p class="banner__texto">Encontre em nossa estante o que precisa para seu desenvolvimento!</p>
         <input type="search" class="banner__search" placeholder="Qual será sua próxima leitura?">
     </section>
+
+    <section class="carrossel">
+        <h2 class="carrossel__titulo">Últimos Lançamentos</h2>
+        <br>
+        <div class="swiper">
+            <div class="swiper-wrapper">
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
+              <!-- Slides -->
+              <div class="swiper-slide"><img src="./img/ApacheKafka.png"></div>
+              <div class="swiper-slide"><img src="./img/Liderança.png"></div>
+              <div class="swiper-slide"><img src="./img/MetricasAgeis.png"></div>
+              <div class="swiper-slide"><img src="./img/Javascript.svg"></div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card__descricao">
+                <div class="descricao">
+                    <h3 class="descricao__titulo">Talvez você também se interesse por...</h3>
+                    <h2 class="descricao__titulo-livro">Angular 11 e Firebase</h2>
+                    <p class="descricao__texto">Construindo uma aplicação integrada com a plataforma do Google.</p>
+                </div>
+                <img src="./img/Angular.svg" class="descricao__img">
+            </div> 
+            <div class="card__botoes">
+                <ul class="botoes">
+                    <li class="botoes__item"><img src="./img/Favoritos.svg"></li>
+                    <li class="botoes__item"><img src="./img/Compras.svg"></li>
+                </ul>
+                <a href="#" class="botoes__ancora">Saiba Mais</a>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="carrossel">
+        <h2 class="carrossel__titulo">Mais Vendidos</h2>
+        <br>
+        <div class="swiper">
+            <div class="swiper-wrapper">
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
+              <!-- Slides -->
+              <div class="swiper-slide"><img src="./img/ApacheKafka.png"></div>
+              <div class="swiper-slide"><img src="./img/Liderança.png"></div>
+              <div class="swiper-slide"><img src="./img/MetricasAgeis.png"></div>
+              <div class="swiper-slide"><img src="./img/Javascript.svg"></div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card__descricao">
+                <div class="descricao">
+                    <img src="./img/Estrelinhas.svg" class="descricao__img">
+                    <h3 class="descricao__titulo">Autora do Mês</h3>
+                    <h2 class="descricao__titulo-livro">Juliana Agarikov</h2>
+                    <p class="descricao__texto">CAnalista de sistemas e escritora, Juliana é especialista em Front-End.</p>
+                </div>
+                <img src="./img/Escritora.svg" class="descricao__img">
+            </div> 
+            <div class="card__botoes">
+                <ul class="botoes">
+                    <li class="botoes__item"><img src="./img/Favoritos.svg"></li>
+                    <li class="botoes__item"><img src="./img/Compras.svg"></li>
+                </ul>
+                <a href="#" class="botoes__ancora">Saiba Mais</a>
+            </div>
+
+        </div>
+    </section>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+        const swiper = new Swiper('.swiper', {
+            spaceBetween: 10,
+            slidesPerView: 3,
+        });
+    </script>
 </body>
 </html>
