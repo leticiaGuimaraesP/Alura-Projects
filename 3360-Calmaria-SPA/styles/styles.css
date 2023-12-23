@@ -1,0 +1,281 @@
+@charset "UTF-8";
+:root {
+  --gradiante: linear-gradient(180deg, #E8F5C8 0%, #FFFFFF 96.87%);
+  --gradiante-secundario: linear-gradient(180deg, #e9f0ee 0%, #e3eeeb 96.87%);
+  --preto: black;
+  --roxo-escuro: #0C0421;
+  --roxo-vibrante: #4E75FF;
+  --roxo-calmante: #85A0FF;
+  --lilas: #CAD4FA;
+  --verde-calmante: #E8F5C8;
+  --ft-textos: "Montserrat", sans-serif;
+  --ft-titulos:"Krona One", sans-serif;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/*Em SCSS (Sassy CSS), os mixins são um recurso que permite reutilizar conjuntos 
+de declarações CSS em vários lugares. Eles são como funções para o CSS, permitindo 
+definir um conjunto de estilos que podem ser aplicados a diferentes elementos. */
+header {
+  background: var(--gradiante);
+  padding: 2rem;
+}
+header nav {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.6rem;
+}
+header nav .linha {
+  border-top: 1px solid var(--preto);
+  width: 80%;
+}
+header nav ul {
+  display: inline-flex;
+  gap: 2rem;
+}
+header nav ul li {
+  list-style: none;
+}
+header nav ul a {
+  text-decoration: none;
+  font-family: var(--ft-textos);
+  font-size: 1rem;
+  color: var(--preto);
+  font-weight: 500;
+}
+header nav ul a:hover {
+  transform: scale(1.2);
+  font-weight: 700;
+}
+header #home {
+  max-width: 1040px;
+  margin: 0 auto;
+  width: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+header #home .textos-home {
+  max-width: 464px;
+}
+header #home .textos-home h1 {
+  font-family: var(--ft-titulos);
+  font-size: 42px;
+  color: var(--preto);
+  margin-bottom: 2rem;
+}
+header #home .textos-home h1 span {
+  color: var(--roxo-vibrante);
+}
+header #home .img-home {
+  max-width: 474px;
+}
+header #home .img-home img {
+  width: 100%;
+}
+header #home .textos-home .btn-main {
+  border-radius: 66px;
+  border: none;
+  background-color: var(--roxo-vibrante);
+  color: white;
+  width: 280px;
+  height: 66px;
+  font-size: 1.3rem;
+}
+header #home .textos-home .btn-main:hover {
+  background-color: var(--roxo-calmante);
+}
+
+#nosso-espaco {
+  margin: 0 auto;
+  width: 80%;
+}
+#nosso-espaco .detalhes {
+  width: 100%;
+  display: inline-flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 2rem;
+  padding: 2rem 0;
+}
+#nosso-espaco .detalhes .imgs-espaco, #nosso-espaco .detalhes .espaco-textos {
+  max-width: 500px;
+}
+#nosso-espaco .detalhes .espaco-textos .separador {
+  width: 100%;
+}
+#nosso-espaco .detalhes:nth-child(2) { /* Maneira para chamar apenas a segunda classe identificada como detalhes */
+  flex-direction: row-reverse;
+}
+#nosso-espaco h2 {
+  font-family: var(--ft-titulos);
+  font-size: 1.8rem;
+  color: var(--roxo-vibrante);
+  font-weight: 500;
+}
+#nosso-espaco p {
+  font-family: var(--ft-textos);
+  font-size: 1.2rem;
+  color: var(--preto);
+}
+
+#servico {
+  background: var(--gradiante);
+  padding: 5rem 0;
+}
+#servico .cards {
+  margin: 0 auto;
+  width: 80%;
+  display: flex;
+  gap: 1.5rem;
+}
+#servico .cards .card {
+  border-radius: 3rem;
+  background: var(--gradiante-secundario);
+  padding: 1rem 1.5rem;
+  text-align: center;
+  border: 1px solid white;
+}
+#servico .cards .card-titulo {
+  font-family: var(--ft-titulos);
+  font-size: 1.5rem;
+  color: var(--roxo-escuro);
+}
+#servico .cards .card-texto {
+  font-family: var(--ft-textos);
+  font-size: 1rem;
+  color: var(--preto);
+}
+#servico .cards .card:hover {
+  background: #eff4e4;
+}
+
+#desconto {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  text-align: center;
+}
+#desconto h4 {
+  font-family: var(--ft-titulos);
+  font-size: 1.6rem;
+  color: var(--preto);
+}
+#desconto p {
+  font-family: var(--ft-textos);
+  font-size: 1.2rem;
+  color: var(--preto);
+}
+#desconto .input-btn {
+  width: 790px;
+  height: 65px;
+  border: 1px solid var(--roxo-vibrante);
+  border-radius: 65px;
+  margin: 0 auto;
+  display: flex;
+}
+#desconto .input-btn input {
+  font-family: var(--ft-textos);
+  font-size: 1.2rem;
+  color: var(--preto);
+  width: 513.5px;
+  border: none;
+  outline: none;
+  margin-left: 2rem;
+}
+#desconto .input-btn button {
+  font-family: var(--ft-textos);
+  font-size: 1.2rem;
+  color: var(--preto);
+  width: 276.5px;
+  background: var(--roxo-vibrante);
+  border-radius: 0 65px 65px 0;
+  border: none;
+  color: white;
+}
+
+#contatos {
+  margin: 0 auto;
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
+}
+#contatos .contatos-imgs {
+  max-width: 50%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: space-around;
+}
+#contatos .contatos-imgs img {
+  width: 100%;
+}
+#contatos .contatos-imgs img:nth-child(n+2) {
+  width: 48%;
+}
+#contatos .contatos-form {
+  background: var(--gradiante);
+  max-width: 50%;
+  padding: 2rem 3rem;
+  border-radius: 2rem;
+}
+#contatos .contatos-form h4 {
+  font-family: var(--ft-titulos);
+  font-size: 1.8rem;
+  color: var(--roxo-vibrante);
+}
+#contatos .contatos-form p, #contatos .contatos-form .inputs .form-group label {
+  font-family: var(--ft-textos);
+  font-size: 1.2rem;
+  color: var(--preto);
+}
+#contatos .contatos-form .inputs {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1.5rem;
+  align-self: stretch;
+}
+#contatos .contatos-form .inputs input, #contatos .contatos-form .inputs .btn, #contatos .contatos-form .inputs .form-group textarea {
+  border-radius: 25px;
+  border: none;
+  padding: 1rem;
+}
+#contatos .contatos-form .inputs .form-group {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+#contatos .contatos-form .inputs .form-group label {
+  font-weight: bold;
+}
+#contatos .contatos-form .inputs .btn {
+  background-color: var(--roxo-vibrante);
+  margin-top: 2rem;
+  color: white;
+  font-size: 1rem;
+  width: 100%;
+  transition: 0.3s;
+}
+#contatos .contatos-form .inputs .btn:hover {
+  background-color: var(--roxo-calmante);
+}
+
+footer {
+  background: var(--verde-calmante);
+  padding: 2rem;
+  text-align: center;
+  margin-top: 5rem;
+  font-family: var(--ft-textos);
+  font-size: 1rem;
+  color: var(--preto);
+}/*# sourceMappingURL=styles.css.map */

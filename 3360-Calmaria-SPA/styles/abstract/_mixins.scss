@@ -1,0 +1,14 @@
+/*Em SCSS (Sassy CSS), os mixins são um recurso que permite reutilizar conjuntos 
+de declarações CSS em vários lugares. Eles são como funções para o CSS, permitindo 
+definir um conjunto de estilos que podem ser aplicados a diferentes elementos. */
+
+@mixin margem-central($width){
+    margin: 0 auto;
+    width: $width;
+}
+
+@mixin ff-fs-cl($f-family, $f-size, $f-color){
+    font-family: $f-family;
+    font-size: $f-size;
+    color: $f-color;
+}

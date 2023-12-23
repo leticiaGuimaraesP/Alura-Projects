@@ -1,0 +1,30 @@
+@use '../abstract/mixins';
+@use '../abstract/variaveis';
+
+#servico{
+    background: var(--gradiante);
+    padding: 5rem 0;
+
+    .cards{
+        @include mixins.margem-central(80%);
+        display: flex;
+        gap: 1.5rem;
+
+        .card{
+            border-radius: 3rem;
+            background: var(--gradiante-secundario);
+            padding: 1rem 1.5rem;
+            text-align: center;
+            border: 1px solid white;
+            &-titulo{
+                @include mixins.ff-fs-cl(var(--ft-titulos), 1.5rem, var(--roxo-escuro));
+            }
+            &-texto{
+                @include mixins.ff-fs-cl(var(--ft-textos), 1rem, var(--preto));
+            }
+            &:hover{
+                background: #eff4e4;
+            }
+        }
+    }
+}

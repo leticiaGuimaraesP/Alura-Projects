@@ -1,0 +1,37 @@
+@use '../abstract/mixins';
+@use '../abstract/variaveis';
+
+#nosso-espaco{
+    @include mixins.margem-central(80%);
+    .detalhes{
+        width: 100%;
+        display: inline-flex;
+        justify-content: space-around;
+        align-items: center;
+        gap: 2rem;
+        padding: 2rem 0;
+
+        .imgs-espaco{
+            max-width: 500px;
+        }
+        .espaco-textos{
+            @extend .imgs-espaco;
+            .separador{
+                width: 100%;
+            }
+        }
+        &:nth-child(2){ /* Maneira para chamar apenas a segunda classe identificada como detalhes */
+            flex-direction: row-reverse;
+        }
+    }
+
+    h2 {
+        @include mixins.ff-fs-cl(var(--ft-titulos), 1.8rem, var(--roxo-vibrante));
+        font-weight: 500;
+    }
+    p {
+        @include mixins.ff-fs-cl(var(--ft-textos), 1.2rem, var(--preto));
+    }
+}
+
+

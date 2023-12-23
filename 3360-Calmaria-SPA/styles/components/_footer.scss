@@ -1,0 +1,11 @@
+@use '../abstract/mixins';
+@use '../abstract/variaveis';
+
+footer{
+    background: var(--verde-calmante);
+    padding: 2rem;
+    text-align: center;
+    margin-top: 5rem;
+    @include mixins.ff-fs-cl(var(--ft-textos), 1rem, var(--preto));
+
+}
