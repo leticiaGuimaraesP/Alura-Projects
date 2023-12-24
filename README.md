@@ -9,5 +9,15 @@ Projeto 1: Alura-Plus - A partir do zero: HTML e CSS para projetos web
 
 Projeto 2: Alura-Books - A partir do zero: HTML e CSS para projetos web
 
-Projeto 3: Alura-Play - CSS: aprofunde em estilos
+Projeto 3: Alura-Portfólio - A partir do zero: HTML e CSS para projetos web
+
+Projeto 4: Alura-Play - CSS: aprofunde em estilos
+
+Projeto 5: WaveCast - CSS: aprofunde em estilos
+
+Projeto 6: Calmaria SPA - CSS: aprofunde em estilos
+
+Projeto 7: Newsletter - CSS: aprofunde em estilos
+
+Projeto 8: Culturama - CSS: aprofunde em estilos
 
