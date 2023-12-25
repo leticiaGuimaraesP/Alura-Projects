@@ -1,0 +1,48 @@
+@import url(./banner.css);
+
+:root{
+    --branco: rgb(255, 255, 255);
+    --cinza: rgb(196, 196, 196);
+    --cinza-transparente: rgba(196, 196, 196, 0.453);
+    --ft-titulo: 'Space Grotesk', 'sans-serif';
+    --ft-texto: 'Roboto', 'sans-serif';
+}
+
+.app__background{
+    background-image: url(../img/spiderhead2.jpeg) ;
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    height: 55vw;
+    
+    display: flex;
+    flex-direction: column;
+    row-gap: 10rem;
+}
+.cabecalho{
+    display: flex;
+    gap: 3rem;
+    padding: 0 3em;
+}
+.cabecalho__lista{
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    color: var(--branco);
+    font-family: var(--ft-texto);
+    width: 80%;
+}
+
+.cabecalho__lista-img{
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+}
+
+.cabecalho__img{
+    width: 6rem;
+    height: 3.5rem;
+}
+.item-img{
+    width: 1.8em;
+    height: 1.8em;
+}
