@@ -76,6 +76,6 @@ Cada pasta neste repositório representa um projeto específico, contendo seu pr
 
 ### Projeto 9: Netflix - CSS: Desafio
 <div style="text-align:left">
-  <img src="https://github.com/leticiaGuimaraesP/Alura-Projects/blob/main/Netflix/img/img1.png" width="500" height="1000"> 
+  <img src="https://github.com/leticiaGuimaraesP/Alura-Projects/blob/main/Netflix/img/img1.png" width="550" height="900"> 
 </div>
 
