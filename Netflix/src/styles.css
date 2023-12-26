@@ -1,4 +1,5 @@
 @import url(./banner.css);
+@import url(./nav.css);
 
 :root{
     --branco: rgb(255, 255, 255);
