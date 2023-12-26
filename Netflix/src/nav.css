@@ -26,3 +26,7 @@
     width: 1.8em;
     height: 1.8em;
 }
+
+.cabecalho-lista__item:hover{
+    color: var(--cinza);
+}

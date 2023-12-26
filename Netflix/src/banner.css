@@ -1,9 +1,11 @@
 .banner{
+    padding: 15% 3em;
     display: flex;
     flex-direction: column;
     gap: 0.5rem;
-    width: 28%;
-    padding: 0 3em;
+    height: 80%;
+    width: 30%;
+    justify-content: center;
     color: var(--branco);
 }
 .banner__logo{
