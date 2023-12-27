@@ -1,0 +1,25 @@
+.trilhos{
+    padding: 0 3em;
+    display: flex;
+    flex-direction: column;
+    row-gap: 1rem;
+}
+
+.trilho{
+    display: flex;
+    flex-direction: row;
+    gap: 0.5rem;
+}
+
+.trilho__titulo{
+    color: var(--cinza);
+    font-family: var(--ft-texto);
+    font-weight: 600;
+}
+.trilho__img{
+    width: 250px;
+    height: 150px;
+}
+.trilho__img:hover{
+    transform: scale(1.15); 
+}

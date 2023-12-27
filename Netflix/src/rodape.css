@@ -1,0 +1,35 @@
+footer{
+    padding: 4em 3em;
+}
+.rodape{
+    padding: 2em 0;
+    color: var(--cinza);
+    display: flex;
+    gap: 10em;
+}
+
+.rodape__lista{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.rodape__botao{
+    color: var(--cinza);
+    border: 1px solid var(--cinza);
+    width: 9rem;
+    height: 2rem;
+}
+.rodape__botao:hover{
+    background-color: var(--cinza-transparente);
+}
+
+.icones{
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+}
+.icones__img{
+    width: 1.5rem;
+    height: 1.5rem;
+}
