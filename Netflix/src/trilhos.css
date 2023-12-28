@@ -8,7 +8,7 @@
 .trilho{
     display: flex;
     flex-direction: row;
-    gap: 0.5rem;
+    gap: 1rem;
 }
 
 .trilho__titulo{
@@ -22,4 +22,15 @@
 }
 .trilho__img:hover{
     transform: scale(1.15); 
+}
+
+@media only screen and (min-width: 720px) and (max-width: 1400px) {
+    .trilho__img{
+        width: 17%;
+        height: 15%;
+        flex-grow: 1.5;
+    }
+    .trilhos{
+        padding: 0 1.5em;
+    }
 }

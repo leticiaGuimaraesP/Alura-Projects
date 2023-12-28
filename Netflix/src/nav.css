@@ -30,3 +30,21 @@
 .cabecalho-lista__item:hover{
     color: var(--cinza);
 }
+
+
+@media only screen and (min-width: 720px) and (max-width: 1400px) {
+    .item-img{
+        width: 1.4em;
+        height: 1.4em;
+    }
+    .cabecalho{
+        font-size: 0.8em;
+    }
+    .cabecalho__img{
+        width: 5.5rem;
+        height: 3rem;
+    }
+    .cabecalho__img{
+        flex-grow: 1;
+    }
+}
